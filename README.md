@@ -9,7 +9,26 @@ SS23 - Listen
 - Entfernt den ersten Eintrag in der ```ArrayList```
 
 -------------------------------
-- Benutzt den Scanner aus der letzten Stunde um ein kleines Einkaufslisten Programm zu schreiben. Das Programm soll folgenden Output haben:
+- Benutzt den Scanner aus der letzten Stunde um ein kleines Einkaufslisten Programm zu schreiben. Das Programm soll wie folgt aussehen:
+
+
+```
+Brauchen wir noch was? j/n
+j
+Was brauchen wir? Bitte eingeben
+Mehl
+Brauchen wir noch was? j/n
+j
+Was brauchen wir? Bitte eingeben
+Milch
+Brauchen wir noch was? j/n
+n
+Einkaufsliste:
+Mehl
+Milch
+
+-Programm beendet sich-
+```
   
   
 ### ℹ️ Resourcen:
