@@ -30,7 +30,15 @@ public class Main {
 //		System.out.println(liste1.isEmpty());
 //		System.out.println(liste1.size());
 		
-
+		
+		
+	    List<String> stringList = new ArrayList<>();
+		
+		stringList.add("Milch");
+		stringList.get(5);
+		
+		stringList.remove("Milch");
+		stringList.remove(0);
 		
 		
 		

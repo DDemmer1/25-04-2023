@@ -15,19 +15,22 @@ public class Application {
 		liste.add(9);
 		liste.add(1);
 
-
-		
 		for(int i = 0;i < liste.size();i++) {
 			
 //			int currentInt = liste.get(i);
 //			System.out.println(currentInt);
-			
+
 			System.out.println(liste.get(i));
-			
 		}
 		
 		
 		liste.remove(0);
+		
+		
+	
+		
+		
+		
 
 		
 	}
