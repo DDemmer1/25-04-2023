@@ -2,6 +2,7 @@ package de.demmer.dennis;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Application {
 	
@@ -9,7 +10,10 @@ public class Application {
 	//main + STRG + LEERTASTE -> ENTER
 	public static void main(String[] args) {
 		
-		List<Integer> liste = new ArrayList<Integer>();
+		ArrayList<Integer> liste = new ArrayList<Integer>();
+		
+		
+		ArrayList<String> meineListe = new ArrayList<String>();
 		
 		liste.add(5);
 		liste.add(9);
@@ -20,14 +24,28 @@ public class Application {
 //			int currentInt = liste.get(i);
 //			System.out.println(currentInt);
 
-			System.out.println(liste.get(i));
+//			System.out.println(liste.get(i));
 		}
 		
 		
 		liste.remove(0);
 		
 		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		while(true) {
+
+			String input = sc.next();
+			System.out.println(input);
+			
+			if(input.equals("j")) {
+				System.out.println("Eingabe ist j");
+				break;
+			}
 	
+		}
+		
 		
 		
 		
