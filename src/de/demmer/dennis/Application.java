@@ -7,45 +7,40 @@ import java.util.Scanner;
 public class Application {
 	
 	
-	//main + STRG + LEERTASTE -> ENTER
 	public static void main(String[] args) {
 		
-		ArrayList<Integer> liste = new ArrayList<Integer>();
-		
-		
-		ArrayList<String> meineListe = new ArrayList<String>();
-		
-		liste.add(5);
-		liste.add(9);
-		liste.add(1);
 
-		for(int i = 0;i < liste.size();i++) {
-			
-//			int currentInt = liste.get(i);
-//			System.out.println(currentInt);
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<String> einkaufsliste = new ArrayList<String>();
 
-//			System.out.println(liste.get(i));
-		}
-		
-		
-		liste.remove(0);
-		
-		
-		
-		Scanner sc = new Scanner(System.in);
-		
+		System.out.println("Willkommen bei ihrer Einkaufsliste!");
+	
 		while(true) {
 
-			String input = sc.next();
-			System.out.println(input);
+			System.out.println("Brauchen wir noch was? j/n");
+			String input = scanner.next();
 			
 			if(input.equals("j")) {
-				System.out.println("Eingabe ist j");
+				System.out.println("Was brauchen wir? Bitte eingeben");
+				String einkauf = scanner.next();
+				einkaufsliste.add(einkauf);
+			}else if(input.equals("n")) {
+				System.out.println("Einkaufsliste:");
+				
+				for(String current : einkaufsliste) {
+					System.out.println(current);				
+				}
 				break;
+			} else {
+				System.out.println(input + " ist keine gültige Eingabe");
+
 			}
-	
+			
+			
+			
+			
+			
 		}
-		
 		
 		
 		
